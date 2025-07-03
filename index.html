@@ -1,86 +1,82 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>내 생애 첫 홈페이지</title>
+  <meta charset="UTF-8" />
+  <title>정유민 | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap');
-
     body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Nunito', sans-serif;
-      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      font-family: 'Concert One', cursive;
+      background: linear-gradient(to right, #e0eafc, #cfdef3);
       color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      margin: 0;
+      text-align: center;
     }
 
     header {
-      background: #f8e1f4;
-      width: 100%;
-      padding: 30px 0;
-      text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 80px 20px 20px;
     }
 
     h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: #7e4ca4;
-      margin: 0;
-      animation: pop 1s ease;
     }
 
-    @keyframes pop {
-      0% { transform: scale(0.7); opacity: 0; }
-      100% { transform: scale(1); opacity: 1; }
+    p {
+      font-size: 1.2rem;
+      color: #555;
     }
 
     nav {
       margin-top: 40px;
       display: flex;
-      gap: 30px;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
-    a {
+    nav a {
       text-decoration: none;
-      font-size: 1.2rem;
-      color: #7e4ca4;
-      padding: 10px 20px;
+      padding: 12px 24px;
+      border-radius: 30px;
+      background: #fbeaff;
       border: 2px solid #7e4ca4;
-      border-radius: 25px;
+      color: #7e4ca4;
+      font-size: 1rem;
       transition: all 0.3s ease;
     }
 
-    a:hover {
+    nav a:hover {
       background-color: #7e4ca4;
       color: white;
-      transform: translateY(-3px);
     }
 
     footer {
-      margin-top: 80px;
-      font-size: 0.9rem;
-      color: #999;
+      margin-top: 100px;
+      font-size: 0.85rem;
+      color: #aaa;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>내 생애 첫 홈페이지</h1>
+    <h1>Jeong Yoomin</h1>
+    <p>🎓 경제학부 | 📊 데이터에 강한 감성러</p>
+    <p>포트폴리오를 통해 저를 소개합니다!</p>
   </header>
 
   <nav>
-    <a href="about/">About</a>
-    <a href="product/">Product</a>
-    <a href="contact/">Contact</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <footer>
-    © 2025 by Me. Inspired by NewJeans ✨
+    © 2025 정유민 | Economics Portfolio Page  
   </footer>
 
 </body>
 </html>
+
