@@ -3,58 +3,105 @@
 <head>
   <meta charset="UTF-8" />
   <title>정유민 | Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      font-family: 'Concert One', cursive;
-      background: linear-gradient(to right, #e0eafc, #cfdef3);
-      color: #333;
+    * {
       margin: 0;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(145deg, #e7d4ff, #d4f1ff);
+      color: #2c2c2c;
+      overflow-x: hidden;
     }
 
     header {
-      padding: 80px 20px 20px;
+      text-align: center;
+      padding: 80px 20px 30px;
     }
 
     h1 {
-      font-size: 3rem;
-      color: #7e4ca4;
+      font-size: 3.5rem;
+      color: #6d28d9;
+      margin-bottom: 10px;
     }
 
-    p {
+    p.sub {
       font-size: 1.2rem;
       color: #555;
+      animation: fadein 1s ease-in-out;
     }
 
     nav {
-      margin-top: 40px;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
+      margin: 40px auto;
       flex-wrap: wrap;
     }
 
     nav a {
       text-decoration: none;
-      padding: 12px 24px;
+      background: white;
+      padding: 14px 30px;
       border-radius: 30px;
-      background: #fbeaff;
-      border: 2px solid #7e4ca4;
-      color: #7e4ca4;
-      font-size: 1rem;
-      transition: all 0.3s ease;
+      border: 2px solid #6d28d9;
+      font-weight: bold;
+      color: #6d28d9;
+      transition: 0.3s ease;
     }
 
     nav a:hover {
-      background-color: #7e4ca4;
+      background-color: #6d28d9;
       color: white;
+      transform: translateY(-2px);
+    }
+
+    .section {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 60px 20px;
+      gap: 40px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.8);
+      width: 280px;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #6d28d9;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
     }
 
     footer {
-      margin-top: 100px;
-      font-size: 0.85rem;
-      color: #aaa;
+      text-align: center;
+      padding: 40px 20px;
+      color: #999;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadein {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -62,8 +109,7 @@
 
   <header>
     <h1>Jeong Yoomin</h1>
-    <p>🎓 경제학부 | 📊 데이터에 강한 감성러</p>
-    <p>포트폴리오를 통해 저를 소개합니다!</p>
+    <p class="sub">Economics Student · Portfolio & Projects</p>
   </header>
 
   <nav>
@@ -73,8 +119,23 @@
     <a href="contact.html">Contact</a>
   </nav>
 
+  <section class="section">
+    <div class="card">
+      <h3>📊 경제학 전공 프로젝트</h3>
+      <p>미시·거시 경제분석, 행동경제학 리서치, 계량 분석 사례 등을 소개합니다.</p>
+    </div>
+    <div class="card">
+      <h3>💻 데이터 시각화</h3>
+      <p>Python, R을 활용한 데이터 분석 및 시각화 포트폴리오를 확인해보세요.</p>
+    </div>
+    <div class="card">
+      <h3>📒 브랜딩 & 디자인</h3>
+      <p>Y2K 감성을 담아낸 개인 디자인 작업물과 디지털 콘텐츠도 함께 공개합니다.</p>
+    </div>
+  </section>
+
   <footer>
-    © 2025 정유민 | Economics Portfolio Page  
+    ⓒ 2025 정유민 | Designed with 💜 by Me
   </footer>
 
 </body>
